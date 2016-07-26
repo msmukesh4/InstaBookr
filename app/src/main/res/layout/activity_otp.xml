@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/heading_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            style="@style/RegistrationHeading"
+            android:text="Enter OTP"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_edittext_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/heading_otp"
+        android:layout_marginBottom="30dp" >
+
+        <EditText
+            android:id="@+id/et_otp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:hint="Enter otp here"
+            />
+        <LinearLayout
+            android:id="@+id/ll_otp_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_otp"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/btn_resend_otp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:text="Resend otp"
+                style="@style/RegisterButton"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"></LinearLayout>
+
+            <Button
+                android:id="@+id/btn_otp"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:text="Submit otp"
+                android:layout_toRightOf="@+id/btn_resend_otp"
+                style="@style/RegisterButton"
+                android:layout_below="@+id/et_otp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

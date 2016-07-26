@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/user_image"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="firstname lastname"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone number"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_user_info"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <View android:background="#A0A0A0"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:padding="15dp"/>
+
+        <View android:background="#A0A0A0"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_bookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Bookings"
+            android:padding="15dp"/>
+
+        <View android:background="#A0A0A0"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:padding="15dp"/>
+
+        <View android:background="#A0A0A0"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_user_loyality_discounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Loyality Discounts"
+            android:padding="15dp"/>
+
+        <View android:background="#A0A0A0"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tv_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us / Feedback"
+            android:padding="15dp"/>
+
+        <View android:background="#A0A0A0"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

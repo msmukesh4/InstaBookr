@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/StandardPrompt"
+        android:text="Shopname"
+        />
+    <TextView
+        android:id="@+id/tv_service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/StandardPrompt"
+        android:text="Service name"
+        android:layout_below="@+id/tv_shopname"
+        />
+    <TextView
+        android:id="@+id/tv_time_slot_val"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#A0A0A0"
+        android:text="Time time time"
+        android:layout_below="@+id/tv_service_name"
+        />
+
+    <TextView
+        android:id="@+id/inr_symbol"
+        android:textColor="@color/orangeRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹"
+        android:textSize="13dp"
+        android:layout_below="@+id/tv_time_slot_val"/>
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:id="@+id/tv_service_cost"
+        android:textColor="@color/orangeRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/inr_symbol"
+        android:layout_below="@id/tv_time_slot_val"
+        android:text="service cost"
+        android:textSize="13dp"/>
+
+
+</RelativeLayout>

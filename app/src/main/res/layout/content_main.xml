@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/MidnightBlue"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.instabookr.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/rl_main_menu"
+                android:layout_alignParentTop="true"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_salon"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/iv_spa"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/iv_gym"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/iv_sports"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_main_menu">
+
+                <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:id="@+id/tv_offer_heading"
+                    android:layout_below="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/StandardPrompt"
+                    android:textSize="20sp"
+                    android:text="Offers"
+                    android:padding="10dp"
+                    android:textColor="@color/CadetBlue"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_offers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_offer_heading"
+                    android:padding="10dp"
+                    >
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:id="@+id/ll_offers_1"
+                       android:layout_height="100dp">
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="95dp"
+                           android:layout_weight="1"
+                           android:id="@+id/ll_offers_1_1"
+                           android:background="@color/Aquamarine"
+                           android:alpha="112"
+                           android:gravity="center"
+                           >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/black"
+                               android:text="95% OFF"
+                               />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="95dp"
+                           android:layout_weight=".1"
+                           android:background="@color/Yellow"
+                           android:alpha="00"
+                           android:gravity="center"
+                           ></LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="95dp"
+                           android:layout_weight="1"
+                           android:id="@+id/ll_offers_1_2"
+                           android:background="@color/Yellow"
+                           android:alpha="112"
+                           android:gravity="center"
+                           >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/black"
+                               android:text="95% OFF"
+                               />
+                       </LinearLayout>
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/ll_offers_2"
+                        android:layout_below="@+id/ll_offers_1"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_2_1"
+                            android:background="@color/colorAccent"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight=".1"
+                            android:background="@color/Yellow"
+                            android:alpha="00"
+                            android:gravity="center"
+                            ></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:background="@color/DarkSeaGreen"
+                            android:id="@+id/ll_offers_2_2"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_offers_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/ll_offers_2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_3_1"
+                            android:background="@color/LightSalmon"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight=".1"
+                            android:background="@color/Yellow"
+                            android:alpha="00"
+                            android:gravity="center"
+                            ></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_3_2"
+                            android:background="@color/LightSkyBlue"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_offers_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/ll_offers_3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_4_1"
+                            android:background="@color/Aquamarine"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight=".1"
+                            android:background="@color/Yellow"
+                            android:alpha="00"
+                            android:gravity="center"
+                            ></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_4_2"
+                            android:background="@color/Yellow"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_offers_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/ll_offers_4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_5_1"
+                            android:background="@color/Aquamarine"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight=".1"
+                            android:background="@color/Yellow"
+                            android:alpha="00"
+                            android:gravity="center"
+                            ></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_5_2"
+                            android:background="@color/Yellow"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/salon_treeview"
+                android:visibility="gone"
+                android:layout_below="@+id/rl_view_pager"></RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spa_treeview"
+                android:visibility="gone"
+                android:layout_below="@+id/rl_main_menu"></RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gym_treeview"
+                android:visibility="gone"
+                android:layout_below="@+id/rl_main_menu"></RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sports_treeview"
+                android:visibility="gone"
+                android:layout_below="@+id/rl_main_menu"></RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
