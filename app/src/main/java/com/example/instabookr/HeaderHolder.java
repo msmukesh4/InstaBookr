@@ -1,6 +1,7 @@
 package com.example.instabookr;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -40,6 +41,10 @@ public class HeaderHolder extends TreeNode.BaseNodeViewHolder<IconTreeItemHolder
             @Override
             public void onClick(View v) {
                 Toast.makeText(context,"Clicked on value "+value.text,Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context,ServiceListActivity.class);
+                intent.putExtra("service_name",value.text);
+                intent.putExtra("service_uuid","1231231231qwertyuiop");
+                context.startActivity(intent);
             }
         });
 

@@ -23,6 +23,11 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#2f68b5</item>
     </style>
+    <style name="SmallPrompt" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/orangeRed</item>
+    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

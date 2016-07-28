@@ -30,5 +30,7 @@ dependencies {
     compile ('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
         exclude module: 'support-v4'
     }
+    compile 'io.apptik.widget:multislider:1.2'
+
 
 }

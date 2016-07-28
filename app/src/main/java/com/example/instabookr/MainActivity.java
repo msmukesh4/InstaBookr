@@ -89,27 +89,27 @@ public class MainActivity extends AppCompatActivity
         iv_spa.setImageResource(R.drawable.cart_icon);
         iv_sports.setImageResource(R.drawable.cart_icon);
 
-        // Dummy Static Population of Offers
-        offer_list = new ArrayList<Offer>();
-        Offer offer = new Offer();
-        offer.setImg_res(R.drawable.new2);
-        offer.setOffer_text("50% off");
-        offer_list.add(offer);
-
-        Offer offer2 = new Offer();
-        offer2.setImg_res(R.drawable.new3);
-        offer2.setOffer_text("56% off");
-        offer_list.add(offer2);
-
-        Offer offer3 = new Offer();
-        offer3.setImg_res(R.drawable.new1);
-        offer3.setOffer_text("40% off");
-        offer_list.add(offer3);
-
-        Offer offer4 = new Offer();
-        offer4.setImg_res(R.drawable.new4);
-        offer4.setOffer_text("90% off");
-        offer_list.add(offer4);
+//        // Dummy Static Population of Offers
+//        offer_list = new ArrayList<Offer>();
+//        Offer offer = new Offer();
+//        offer.setImg_res(R.drawable.new2);
+//        offer.setOffer_text("50% off");
+//        offer_list.add(offer);
+//
+//        Offer offer2 = new Offer();
+//        offer2.setImg_res(R.drawable.new3);
+//        offer2.setOffer_text("56% off");
+//        offer_list.add(offer2);
+//
+//        Offer offer3 = new Offer();
+//        offer3.setImg_res(R.drawable.new1);
+//        offer3.setOffer_text("40% off");
+//        offer_list.add(offer3);
+//
+//        Offer offer4 = new Offer();
+//        offer4.setImg_res(R.drawable.new4);
+//        offer4.setOffer_text("90% off");
+//        offer_list.add(offer4);
 
 //        build_offers_layout(ll_offer_layout, offer_list);
 

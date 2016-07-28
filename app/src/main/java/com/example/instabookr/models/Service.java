@@ -9,6 +9,58 @@ public class Service {
     int service_type_id;
     String service_name;
     int cost;
+    String icon;
+
+    public int getDiscounted_cost() {
+        return discounted_cost;
+    }
+
+    public void setDiscounted_cost(int discounted_cost) {
+        this.discounted_cost = discounted_cost;
+    }
+
+    int discounted_cost=0;
+    String offer_uuid;
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public int getDiscount() {
+        return discounted_cost;
+    }
+
+    public Service(){
+        // default constructor is needed as we have other constructor too
+    }
+
+    public Service(String shop_uuid, String uuid, int service_type_id, String service_name, int cost, String icon, int discounted_cost) {
+        this.uuid = uuid;
+        this.discounted_cost = discounted_cost;
+        this.icon = icon;
+        this.cost = cost;
+        this.service_name = service_name;
+        this.service_type_id = service_type_id;
+        this.shop_uuid = shop_uuid;
+    }
+
+    public void setDiscount(int discounted_cost) {
+
+        this.discounted_cost = discounted_cost;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
+    public Service(String shop_uuid, String uuid, int service_type_id, String service_name, int cost, String icon) {
+        this.uuid = uuid;
+        this.icon = icon;
+        this.cost = cost;
+        this.service_name = service_name;
+        this.service_type_id = service_type_id;
+        this.shop_uuid = shop_uuid;
+    }
 
     public String getUuid() {
         return uuid;
