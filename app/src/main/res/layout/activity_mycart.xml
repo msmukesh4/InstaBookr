@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White" >
+
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:orientation="vertical" >
+
+        <!-- Heading -->
+
+        <TextView
+            android:id="@+id/txtHeading"
+            style="@style/StandardPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Cart"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cart_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relativeTotal"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layoutTitle"
+        android:clickable="true" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/pBarMyCart"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtErrorMsg"
+        style="@style/StandardPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/relativeTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnGoToPaymentGateway"
+        android:layout_marginTop="5dp"
+        android:background="#e5e5e5"
+        android:gravity="right"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/lblTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SmallPrompt"
+            android:text="Total : "
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/tv_rs_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/Red"/>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SmallPrompt"
+            android:text="1000"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/orangeRed"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGoToPaymentGateway"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/SmallPrompt"
+        android:text="@string/process_the_payment" />
+
+</RelativeLayout>

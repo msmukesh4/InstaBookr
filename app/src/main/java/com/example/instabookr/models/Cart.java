@@ -10,6 +10,25 @@ public class Cart {
     String service_uuid;
     String time_slots;
     int cost;
+    int offer_cost=0;
+    // period shall be in days
+    int period;
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public void setPeriod(int period) {
+        this.period = period;
+    }
+
+    public int getOffer_cost() {
+        return offer_cost;
+    }
+
+    public void setOffer_cost(int offer_cost) {
+        this.offer_cost = offer_cost;
+    }
 
     public int getCost() {
         return cost;

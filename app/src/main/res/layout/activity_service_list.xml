@@ -230,7 +230,7 @@
                 android:layout_height="wrap_content"
                 app:thumbNumber="2"
                 app:range1="@drawable/multislider_scrubber_track_holo_light"
-                app:stepsThumbsApart="5"
+                app:stepsThumbsApart="1"
                 app:drawThumbsApart="true"
                 app:scaleMin="5"
                 app:scaleMax="24" />

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -11,11 +12,14 @@ import android.widget.Toast;
 
 import com.example.instabookr.models.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
 import io.apptik.widget.MultiSlider;
+
+import static com.example.instabookr.Common.getDayName;
 
 /**
  * Created by mukesh on 27/7/16.
@@ -30,6 +34,8 @@ public class ServiceListActivity extends AppCompatActivity {
     int day;
     Calendar calendar;
     TextView tv_date_1_1,tv_date_1_2;
+//    LinearLayout ll_date_1,ll_date_2,ll_date_3,ll_date_4,ll_date_5,ll_date_6,ll_date_7;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +57,17 @@ public class ServiceListActivity extends AppCompatActivity {
         tv_date_1_1 = (TextView) findViewById(R.id.tv_date_1_1);
         tv_date_1_2 = (TextView) findViewById(R.id.tv_date_1_2);
 
+
+//        // date view
+//        ll_date_1 = (LinearLayout) findViewById(R.id.ll_date_1);
+//        ll_date_2 = (LinearLayout) findViewById(R.id.ll_date_2);
+//        ll_date_3 = (LinearLayout) findViewById(R.id.ll_date_3);
+//        ll_date_4 = (LinearLayout) findViewById(R.id.ll_date_4);
+//        ll_date_5 = (LinearLayout) findViewById(R.id.ll_date_5);
+//        ll_date_6 = (LinearLayout) findViewById(R.id.ll_date_6);
+//        ll_date_7 = (LinearLayout) findViewById(R.id.ll_date_7);
+
+
         String service_name = getIntent().getStringExtra("service_name");
         String service_uuid = getIntent().getStringExtra("service_uuid");
         Toast.makeText(getApplicationContext(),"service_name : "+service_name+" service_uuid : "+service_uuid,
@@ -58,10 +75,16 @@ public class ServiceListActivity extends AppCompatActivity {
 
         date = calendar.get(Calendar.DATE);
         day = calendar.get(Calendar.DAY_OF_WEEK);
+        SimpleDateFormat month_date = new SimpleDateFormat("MMMM");
+        String month_name = month_date.format(calendar.getTime());
+
         tv_date_1_1.setText(String.valueOf(getDayName(day)));
         tv_date_1_2.setText(String.valueOf(date));
 
-
+        // Dynamically change when click on different date
+        Common.dateSelected = String.valueOf(date);
+        Common.daySelected = getDayName(day);
+        Common.monthSelected = month_name;
 
         Service s = new Service("schp_uuid",service_uuid,1,"Full body spa",400,"demo");
         service_list.add(s);
@@ -85,27 +108,6 @@ public class ServiceListActivity extends AppCompatActivity {
 
         service_listView.setAdapter(new ServiceListAdapter(ServiceListActivity.this,service_list));
 
-    }
-
-    public String getDayName(int day){
-        switch(day){
-            case 1:
-                return "SUN";
-            case 2:
-                return "MON";
-            case 3:
-                return "TUE";
-            case 4:
-                return "WED";
-            case 5:
-                return "THUR";
-            case 6:
-                return  "FRI";
-            case 7:
-                return "SAT";
-        }
-
-        return "Worng Day";
     }
 
     @Override
