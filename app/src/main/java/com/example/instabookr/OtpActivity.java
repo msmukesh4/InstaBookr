@@ -65,7 +65,7 @@ public class OtpActivity extends AppCompatActivity {
 
 
 
-        btn_submit_otp = (Button) findViewById(R.id.btn_otp);
+        btn_submit_otp = (Button) findViewById(R.id.btn_verify_otp);
         btn_submit_otp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

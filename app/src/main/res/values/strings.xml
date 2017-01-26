@@ -26,6 +26,10 @@
         completions."
     </string>
     <string name="process_the_payment">Proceed to Pay</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="request_timeout_header">Request Timeout</string>
+    <string name="request_timeout_content">Server is in maintenance mode,\n Please, try after sometime.</string>
+    <string name="something_went_wrong">Oops! Something went wrong</string>
 
     <string-array name="salon_hair_services">
         <item>Hair cut</item>

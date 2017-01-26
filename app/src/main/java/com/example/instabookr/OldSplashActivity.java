@@ -89,7 +89,7 @@ public class OldSplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_old_splash);
 //        ActionBar actionBar = getSupportActionBar();
 //        if (actionBar != null) {
 //            actionBar.setDisplayHomeAsUpEnabled(true);

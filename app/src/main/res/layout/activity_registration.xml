@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#FFFFFF">
 
-    <ScrollView
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -15,16 +12,15 @@
                 android:id="@+id/rl_heading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:background="@color/colorAccent">
+                android:layout_alignParentTop="true">
 
                 <TextView
                     android:id="@+id/registration_heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    style="@style/RegistrationHeading"
-                    android:text="Enter Registration Details"
+                    style="@style/HeadingLarge"
+                    android:text="Registration"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true" />
 
@@ -41,19 +37,20 @@
                     android:id="@+id/et_firstname"
                     android:maxLength="25"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/edit_text_height"
                     android:hint="First Name *"
                     android:imeActionId="@+id/login"
                     android:imeOptions="actionUnspecified"
+                    style="@style/EditTextStyle"
                     android:inputType="text"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    />
 
             </android.support.design.widget.TextInputLayout>
 
 
             <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="5dp"
-                android:padding="5dp"
+                android:layout_marginTop="@dimen/vertical_layout_separator_small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/ln"
@@ -62,8 +59,9 @@
                 <EditText
                     android:id="@+id/et_lastname"
                     android:maxLength="25"
+                    style="@style/EditTextStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/edit_text_height"
                     android:hint="Last name * "
                     android:imeActionId="@+id/login"
                     android:imeOptions="actionUnspecified"
@@ -73,18 +71,18 @@
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="5dp"
-                android:padding="5dp"
+                android:layout_marginTop="@dimen/vertical_layout_separator_small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/mn"
                 android:layout_below="@+id/ln">
 
                 <EditText
+                    style="@style/EditTextStyle"
                     android:id="@+id/et_mobile_no"
                     android:maxLength="10"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/edit_text_height"
                     android:hint="Mobile No. * "
                     android:imeActionId="@+id/login"
                     android:imeOptions="actionUnspecified"
@@ -94,8 +92,7 @@
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="5dp"
-                android:padding="5dp"
+                android:layout_marginTop="@dimen/vertical_layout_separator_small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/email"
@@ -105,7 +102,8 @@
                     android:id="@+id/et_email"
                     android:maxLength="75"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/edit_text_height"
+                    style="@style/EditTextStyle"
                     android:hint="Email *"
                     android:imeActionId="@+id/login"
                     android:imeOptions="actionUnspecified"
@@ -115,8 +113,7 @@
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="5dp"
-                android:padding="5dp"
+                android:layout_marginTop="@dimen/vertical_layout_separator_small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/pass"
@@ -126,8 +123,9 @@
                     android:id="@+id/et_password"
                     android:maxLength="50"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/edit_text_height"
                     android:hint="Password * "
+                    style="@style/EditTextStyle"
                     android:imeActionId="@+id/login"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
@@ -135,34 +133,23 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <LinearLayout
-                android:layout_below="@+id/pass"
+            <Button
+                android:id="@+id/btn_register"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:orientation="horizontal">
+                android:layout_height="@dimen/button_height"
+                android:theme="@style/ButtonSuccess"
+                android:text="Register"
+                android:layout_below="@+id/pass"
+                android:layout_marginTop="@dimen/vertical_layout_separator_medium"
+                android:layout_alignParentRight="true"/>
 
-                <Button
-                    android:id="@+id/btn_register"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="@style/RegisterButton"
-                    android:text="Submit"/>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".3"></LinearLayout>
-
-                <Button
-                    android:id="@+id/btn_cancel"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="@style/RegisterButton"
-                    android:text="Cancel"/>
-            </LinearLayout>
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:theme="@style/ButtonInfo"
+                android:layout_below="@+id/btn_register"
+                android:layout_marginTop="@dimen/vertical_layout_separator_small"
+                android:text="Sign IN"/>
         </RelativeLayout>
     </ScrollView>
-</RelativeLayout>

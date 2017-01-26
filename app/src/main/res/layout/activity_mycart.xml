@@ -6,17 +6,18 @@
 
     <LinearLayout
         android:id="@+id/layoutTitle"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:background="#e5e5e5">
 
         <!-- Heading -->
 
         <TextView
             android:id="@+id/txtHeading"
-            style="@style/StandardPrompt"
-            android:layout_width="match_parent"
+            style="@style/HeadingMedium"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My Cart"
             android:padding="10dp"
@@ -95,13 +96,13 @@
 
     <Button
         android:id="@+id/btnGoToPaymentGateway"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        style="@style/SmallPrompt"
+        android:theme="@style/ButtonInfo"
         android:text="@string/process_the_payment" />
 
 </RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">56dp</dimen>
+    <dimen name="button_height">64dp</dimen>
+    <dimen name="button_text_size">20dp</dimen>
+    <dimen name="edit_text_height">60dp</dimen>
+
+    <dimen name="header_text_large">48dp</dimen>
+    <dimen name="header_text_medium">28dp</dimen>
+    <dimen name="header_text_small">22dp</dimen>
+    <dimen name="header_text_xsmall">18dp</dimen>
+    <dimen name="header_text_xxsmall">14dp</dimen>
+    <dimen name="header_text_xxxsmall">12dp</dimen>
+
+
+    <dimen name="separation_line_height">1dp</dimen>
+    <dimen name="vertical_layout_separator_xsmall">10dp</dimen>
+    <dimen name="vertical_layout_separator_small">20dp</dimen>
+    <dimen name="vertical_layout_separator_medium">40dp</dimen>
+    <dimen name="vertical_layout_separator_large">60dp</dimen>
+    <dimen name="vertical_layout_separator_xlarge">100dp</dimen>
+    <dimen name="vertical_layout_separator_xxlarge">120dp</dimen>
+
+    <dimen name="auto_scroll_view_pager_height">250dp</dimen>
+
+    <dimen name="item_image_in_list">80dp</dimen>
+</resources>

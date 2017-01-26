@@ -14,7 +14,7 @@ public class RegistrationActivity extends AppCompatActivity {
     EditText fir;
     EditText et_firstname,et_lastname,et_mobile_no,et_email,et_password;
     Button btn_submit,btn_cancel;
-    String errorMsg = "";
+    String errorMsg = "",log="Registration";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     finish();
                 }else{
                     btn_submit.setClickable(true);
-                    Toast.makeText(RegistrationActivity.this,errorMsg,Toast.LENGTH_LONG).show();
+//                    Toast.makeText(RegistrationActivity.this,errorMsg,Toast.LENGTH_LONG).show();
                 }
             }
         });

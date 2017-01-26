@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3090DC</color>
+    <color name="colorPrimaryDark">#297abb</color>
+    <color name="colorAccent">#36a1f5</color>
+
+    <color name="danger">#ED5565</color>
+    <color name="danger_dark">#d31527</color>
+
+    <color name="success">#1AB39F</color>
+    <color name="success_dark">#127f6f</color>
+
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>

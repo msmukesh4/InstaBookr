@@ -1,6 +1,14 @@
 package com.example.instabookr;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+
 import com.example.instabookr.models.Cart;
+import com.example.instabookr.models.Offer;
+import com.example.instabookr.models.Service;
 import com.example.instabookr.models.User;
 
 import java.util.ArrayList;
@@ -11,7 +19,7 @@ import java.util.List;
  */
 public class Common {
 
-    public static boolean IS_USER_LOGGED_IN = true;
+    public static boolean IS_USER_LOGGED_IN = false;
 
     public static User global_user = new User();
 //    user info
@@ -28,6 +36,14 @@ public class Common {
     public static String daySelected = null;
     public static String dateSelected = null;
     public static String monthSelected = null;
+
+    public static ArrayList<Service> gymServices = new ArrayList<>();
+    public static ArrayList<Service> spaServices = new ArrayList<>();
+    public static ArrayList<Service> sportsServices = new ArrayList<>();
+    public static ArrayList<Service> salonServices = new ArrayList<>();
+
+    public static ArrayList<Offer> offerList = new ArrayList<>();
+
 
     public static List<Cart> cartArrayList;
 
@@ -87,5 +103,52 @@ public class Common {
         tempCartObj.setPeriod(1120);
         cartArrayList.add(tempCartObj);
     }
+
+    public static void initServices(){
+        Service s = new Service("name",12);
+        Service s2 = new Service("nnnn",2);
+        Service s3 = new Service("mmmm",112);
+        Service s4 = new Service("kkkk",122);
+
+        gymServices.add(s);
+        spaServices.add(s2);
+        salonServices.add(s3);
+        sportsServices.add(s4);
+
+    }
+
+
+
+    public static boolean isInternetAvailable(Context context){
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        return netInfo != null && netInfo.isConnectedOrConnecting();
+    }
+
+    public static void showNoNetworkNotification(final Context context) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle("No Network Connection");
+        builder.setCancelable(false);
+        builder.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            }
+        });
+        builder.setMessage("Please check your network connection.");
+        builder.show();
+    }
+
+
+    public static final String CLIENT_ID = "";
+    public static final String CLIENT_SECRET = "";
+
+    // urls
+    public static final String baseUrl = "";
+    public static final String signInUrl = baseUrl+"oauth/token.json";
+    public static final String getUserDetails = baseUrl+"api/v1/users/get_user_data";
+
+
+
+
 
 }

@@ -4,22 +4,27 @@ package com.example.instabookr.models;
  * Created by mukesh on 26/7/16.
  */
 public class Offer {
-    String offer_text;
-    int img_res;
+    public String offersHeader;
+    public String offerDesc;
 
-    public String getOffer_text() {
-        return offer_text;
+    public Offer(String offersHeader, String offerDesc) {
+        this.offersHeader = offersHeader;
+        this.offerDesc = offerDesc;
     }
 
-    public void setOffer_text(String offer_text) {
-        this.offer_text = offer_text;
+    public String getOffersHeader() {
+        return offersHeader;
     }
 
-    public int getImg_res() {
-        return img_res;
+    public void setOffersHeader(String offersHeader) {
+        this.offersHeader = offersHeader;
     }
 
-    public void setImg_res(int img_res) {
-        this.img_res = img_res;
+    public String getOfferDesc() {
+        return offerDesc;
+    }
+
+    public void setOfferDesc(String offerDesc) {
+        this.offerDesc = offerDesc;
     }
 }

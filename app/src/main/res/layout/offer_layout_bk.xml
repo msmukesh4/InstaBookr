@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/new1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/view_gradient"/>
+
+        <LinearLayout
+            android:paddingLeft="@dimen/vertical_layout_separator_small"
+            android:paddingRight="@dimen/vertical_layout_separator_small"
+            android:paddingTop="@dimen/vertical_layout_separator_small"
+            android:paddingBottom="@dimen/vertical_layout_separator_small"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55"/>
+
+            <TextView
+                android:id="@+id/offer_header"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:text="Offer Header"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/offer_desc"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:text="Some description about the events goes here a d a d a d a d a d ad a "
+                android:textSize="14sp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

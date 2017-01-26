@@ -76,7 +76,7 @@ public class BookingAdapter extends BaseAdapter {
             });
 
         }catch (Exception ee){
-            Toast.makeText(context,"Error",Toast.LENGTH_SHORT).show();
+//            Toast.makeText(context,"Error",Toast.LENGTH_SHORT).show();
             ee.printStackTrace();
         }
         return convertView;

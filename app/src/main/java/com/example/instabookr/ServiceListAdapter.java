@@ -64,7 +64,7 @@ public class ServiceListAdapter extends BaseAdapter {
                 holder.img_service_icon.setImageResource(R.mipmap.ic_launcher);
             }else{
                 // download the image and add ot the image view with picasso
-                Toast.makeText(context,"Downloading Images pleas wait",Toast.LENGTH_SHORT).show();
+                Toast.makeText(context,"Downloading Images please wait",Toast.LENGTH_SHORT).show();
             }
             holder.tv_shopname.setText(service.getShop_uuid().toString());
             holder.tv_shop_address.setText(service.getService_name());
@@ -86,7 +86,7 @@ public class ServiceListAdapter extends BaseAdapter {
                     Toast.makeText(context, "clicked on " + position, Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(context,TimeSelectorActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    intent.putExtra("service_uuid",service_list.get(position).getUuid().toString());
+//                    intent.putExtra("service_uuid",service_list.get(position).getUuid().toString());
                     context.startActivity(intent);
                 }
             });

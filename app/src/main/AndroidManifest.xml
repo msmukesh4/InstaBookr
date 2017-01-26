@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".HomePage"
             android:label="@string/app_name"
             android:parentActivityName=".SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">

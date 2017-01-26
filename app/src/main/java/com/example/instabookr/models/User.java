@@ -15,6 +15,43 @@ public class User {
     String password;
     String profile_pic;
     String latitude;
+    private String gender;
+    private String status;
+    private boolean isAppUser;
+
+    public boolean isAppUser() {
+        return isAppUser;
+    }
+
+    public void setAppUser(boolean appUser) {
+        isAppUser = appUser;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getAccessToken() {
+        return accessToken;
+    }
+
+    public void setAccessToken(String access_token) {
+        this.accessToken = access_token;
+    }
+
+    private String accessToken;
 
     public String getAltername_phone_number() {
         return altername_phone_number;

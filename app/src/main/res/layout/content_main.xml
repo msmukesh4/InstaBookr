@@ -83,57 +83,57 @@
                     android:padding="10dp"
                     >
 
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:id="@+id/ll_offers_1"
-                       android:layout_height="100dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/ll_offers_1"
+                        android:layout_height="100dp">
 
-                       <LinearLayout
-                           android:layout_width="0dp"
-                           android:layout_height="95dp"
-                           android:layout_weight="1"
-                           android:id="@+id/ll_offers_1_1"
-                           android:background="@color/Aquamarine"
-                           android:alpha="112"
-                           android:gravity="center"
-                           >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_1_1"
+                            android:background="@color/Aquamarine"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
 
-                           <TextView
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:textColor="@color/black"
-                               android:text="95% OFF"
-                               />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
 
-                       </LinearLayout>
+                        </LinearLayout>
 
-                       <LinearLayout
-                           android:layout_width="0dp"
-                           android:layout_height="95dp"
-                           android:layout_weight=".1"
-                           android:background="@color/Yellow"
-                           android:alpha="00"
-                           android:gravity="center"
-                           ></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight=".1"
+                            android:background="@color/Yellow"
+                            android:alpha="00"
+                            android:gravity="center"
+                            ></LinearLayout>
 
-                       <LinearLayout
-                           android:layout_width="0dp"
-                           android:layout_height="95dp"
-                           android:layout_weight="1"
-                           android:id="@+id/ll_offers_1_2"
-                           android:background="@color/Yellow"
-                           android:alpha="112"
-                           android:gravity="center"
-                           >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="95dp"
+                            android:layout_weight="1"
+                            android:id="@+id/ll_offers_1_2"
+                            android:background="@color/Yellow"
+                            android:alpha="112"
+                            android:gravity="center"
+                            >
 
-                           <TextView
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:textColor="@color/black"
-                               android:text="95% OFF"
-                               />
-                       </LinearLayout>
-                   </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="95% OFF"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"

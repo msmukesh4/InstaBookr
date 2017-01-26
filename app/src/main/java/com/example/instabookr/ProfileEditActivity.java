@@ -31,7 +31,7 @@ public class ProfileEditActivity extends AppCompatActivity{
         et_mobile_no1 = (EditText) findViewById(R.id.et_mobile_no1);
         et_mobile_no2 = (EditText) findViewById(R.id.et_mobile_no2);
         location_spinner = (Spinner) findViewById(R.id.location_spinner);
-        btn_update = (Button) findViewById(R.id.btn_update);
+        btn_update = (Button) findViewById(R.id.btn_submit);
         btn_cancel = (Button) findViewById(R.id.btn_cancel);
 
         // populate user data in the fields

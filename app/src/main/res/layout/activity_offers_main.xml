@@ -3,21 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
-
-    <!--<TextView-->
-        <!--android:id="@+id/tv_email"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Hello World!"-->
-        <!--android:visibility="gone"/>-->
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
+            android:id="@+id/background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
@@ -26,89 +19,35 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/view_gradient"/>
-        <LinearLayout
-            android:layout_marginLeft="10dp"
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/vertical_layout_separator_small"
+            android:paddingRight="@dimen/vertical_layout_separator_small"
+            android:paddingTop="@dimen/vertical_layout_separator_small"
+            android:paddingBottom="@dimen/vertical_layout_separator_small"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="1">
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.55"/>
+            android:layout_height="match_parent">
+
             <TextView
+                android:id="@+id/offer_header"
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.25"
-                android:text="Events"
-                android:gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Offer Header"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:textColor="#ffffff"/>
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="0.25"
-                android:text="Some description about the events goes here"
+                android:layout_width="match_parent"
+                android:id="@+id/offer_desc"
+                android:layout_below="@+id/offer_header"
+                android:layout_marginTop="@dimen/vertical_layout_separator_small"
+                android:layout_height="wrap_content"
+                android:text="Some description about the events goes here a d a d a d a d a d ad a "
                 android:textSize="14sp"
+                android:gravity="center"
                 android:textColor="#ffffff"/>
-        </LinearLayout>
+        </RelativeLayout>
     </RelativeLayout>
-
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:id="@+id/rl_main_menu"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:padding="15dp"-->
-        <!--android:orientation="horizontal">-->
-
-        <!--<ImageView-->
-            <!--android:id="@+id/iv_salon"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--/>-->
-        <!--<ImageView-->
-            <!--android:id="@+id/iv_spa"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--/>-->
-        <!--<ImageView-->
-            <!--android:id="@+id/iv_gym"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--/>-->
-        <!--<ImageView-->
-            <!--android:id="@+id/iv_sports"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--/>-->
-
-    <!--</LinearLayout>-->
-
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/rl_view_pager"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/rl_main_menu"-->
-        <!--android:layout_marginTop="@dimen/activity_vertical_margin">-->
-
-        <!--&lt;!&ndash;android.support.v4.view.ViewPager-->
-            <!--android:id="@+id/view_pager"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="120dp">-->
-        <!--</android.support.v4.view.ViewPager>&ndash;&gt;-->
-        <!--&lt;!&ndash;<cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager&ndash;&gt;-->
-            <!--&lt;!&ndash;android:id="@+id/view_pager"&ndash;&gt;-->
-            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-            <!--&lt;!&ndash;android:layout_height="120dp" />&ndash;&gt;-->
-
-    <!--</RelativeLayout>-->
-
-
-
 </RelativeLayout>
